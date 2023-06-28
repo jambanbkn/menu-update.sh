@@ -134,7 +134,6 @@ rm -rf cf
 rm -rf menu-bckp
 rm -rf add-ns
 rm -rf issue
-rm -rf rclone
 
 cd /usr/bin
 wget -O add-xray "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/add-xray.sh"
@@ -180,8 +179,6 @@ wget -O renewtrgo "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/xray/re
 wget -O cektrgo "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/xray/cektrgo.sh"
 wget -O cf "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/ssh/cf.sh"
 wget -O menu-bckp "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/menu-bckp.sh"
-wget -O issue "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/ssh/issue.net"
-wget -O rclone "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/backup/rclone.conf"
 
 chmod +x add-xray
 chmod +x menu-update
@@ -225,8 +222,6 @@ chmod +x renewtrgo
 chmod +x cektrgo
 chmod +x cf
 chmod +x menu-theme
-chmod +x issue
-chmod +x rclone
 
 clear
 echo -e ""
