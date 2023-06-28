@@ -139,7 +139,7 @@ rm -rf rclone
 cd /usr/bin
 wget -O add-xray "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/add-xray.sh"
 wget -O menu-theme "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/menu-theme.sh"
-wget -O menu-update "https://raw.githubusercontent.com/jambanbkn/menu-update.sh/menu-update.shmenu-update.sh"
+wget -O menu-update "https://raw.githubusercontent.com/jambanbkn/menu-update.sh/menu-update.sh/menu-update.sh"
 wget -O menu "https://raw.githubusercontent.com/kuhing/menu.sh/menu.sh/menu.sh"
 wget -O m-bot "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/m-bot.sh"
 wget -O m-ip "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/m-ip.sh"
