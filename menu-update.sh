@@ -133,19 +133,26 @@ rm -rf m-sshovpn
 rm -rf cf
 rm -rf menu-bckp
 rm -rf add-ns
-rm -rf issue
 
 cd /usr/bin
-wget -O add-xray "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/add-xray.sh"
 wget -O menu-theme "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/menu-theme.sh"
+clear
 wget -O menu-update "https://raw.githubusercontent.com/jambanbkn/menu-update.sh/menu-update.sh/menu-update.sh"
+clear
 wget -O menu "https://raw.githubusercontent.com/kuhing/menu.sh/menu.sh/menu.sh"
+clear
 wget -O m-bot "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/m-bot.sh"
+clear
 wget -O m-ip "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/m-ip.sh"
+clear
 wget -O menu-uuid "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/menu-uuid.sh"
+clear
 wget -O menu-vmess "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/menu-vmess.sh"
+clear
 wget -O menu-vless "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/menu-vless.sh"
+clear
 wget -O menu-ssws "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/menu-ssws.sh"
+clear
 wget -O running "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/running.sh"
 wget -O clearcache "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/clearcache.sh"
 wget -O menu-trgo "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/menu-trgo.sh"
