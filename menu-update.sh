@@ -134,6 +134,10 @@ rm -rf m-sshovpn
 rm -rf cf
 rm -rf menu-bckp
 rm -rf add-gb
+rm -rf vmess
+rm -rf vless
+rm -rf trojan
+rm -rf shadowsocks
 
 cd /usr/bin
 wget -O menu-theme "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/menu-theme.sh"
@@ -218,6 +222,14 @@ wget -O menu-bckp "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/me
 clear
 wget -O add-gb "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/add-gb.sh"
 clear
+wget -O vmess "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/ssh/vmess"
+clear
+wget -O vless "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/ssh/vless"
+clear
+wget -O trojan "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/ssh/trojan"
+clear
+wget -O shadowsocks "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/ssh/shadowsocks"
+clear
 
 chmod +x menu-update
 chmod +x m-ip
@@ -259,6 +271,10 @@ chmod +x cektrgo
 chmod +x cf
 chmod +x menu-theme
 chmod +x add-gb
+chmod +x vmess
+chmod +x vless
+chmod +x trojan
+chmod +x shadowsocks
 
 clear
 echo -e ""
