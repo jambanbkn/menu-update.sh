@@ -133,6 +133,7 @@ rm -rf cektrgo
 rm -rf m-sshovpn
 rm -rf cf
 rm -rf menu-bckp
+rm -rf add-gb
 
 cd /usr/bin
 wget -O menu-theme "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/menu-theme.sh"
@@ -215,6 +216,9 @@ wget -O cf "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/ssh/cf.sh"
 clear
 wget -O menu-bckp "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/menu-bckp.sh"
 clear
+wget -O add-gb "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/add-gb.sh"
+clear
+
 chmod +x menu-update
 chmod +x m-ip
 chmod +x menu
@@ -254,6 +258,7 @@ chmod +x renewtrgo
 chmod +x cektrgo
 chmod +x cf
 chmod +x menu-theme
+chmod +x add-gb
 
 clear
 echo -e ""
