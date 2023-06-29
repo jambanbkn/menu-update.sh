@@ -1,6 +1,7 @@
 #!/bin/bash
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
+clear
 BURIQ () {
     curl -sS https://raw.githubusercontent.com/kuhing/ip/main/vps > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
@@ -18,7 +19,7 @@ BURIQ () {
     done
     rm -f /root/tmp
 }
-
+clear
 MYIP=$(curl -sS ipv4.icanhazip.com)
 Name=$(curl -sS https://raw.githubusercontent.com/kuhing/ip/main/vps | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
@@ -34,7 +35,7 @@ else
 res="Permission Accepted..."
 fi
 }
-
+clear
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
     IZIN=$(curl -sS https://raw.githubusercontent.com/kuhing/ip/main/vps | awk '{print $4}' | grep $MYIP)
@@ -45,6 +46,7 @@ PERMISSION () {
     fi
     BURIQ
 }
+clear
 red='\e[1;31m'
 green='\e[1;32m'
 yellow='\033[0;33m'
@@ -88,6 +90,7 @@ sleep 2
 clear
 echo -e "\e[0;32mGetting New Version Script..\e[0m"
 sleep 1
+clear
 echo ""
 rm -rf menu-theme
 rm -rf menu-update
@@ -117,8 +120,6 @@ rm -rf bw
 rm -rf port-ssl
 rm -rf port-ovpn
 rm -rf xp
-rm -rf acs-set
-rm -rf sshws
 rm -rf status
 rm -rf menu-backup
 rm -rf backup
@@ -132,7 +133,6 @@ rm -rf cektrgo
 rm -rf m-sshovpn
 rm -rf cf
 rm -rf menu-bckp
-rm -rf add-ns
 
 cd /usr/bin
 wget -O menu-theme "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/menu-theme.sh"
@@ -154,40 +154,67 @@ clear
 wget -O menu-ssws "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/menu-ssws.sh"
 clear
 wget -O running "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/running.sh"
+clear
 wget -O clearcache "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/clearcache.sh"
+clear
 wget -O menu-trgo "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/menu-trgo.sh"
+clear
 wget -O menu-trojan "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/menu-trojan.sh"
+clear
 wget -O menu-ssh "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/menu-ssh.sh"
+clear
 wget -O menu-set "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/menu-set.sh"
+clear
 wget -O menu-domain "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/menu-domain.sh"
+clear
 wget -O add-host "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/ssh/add-host.sh"
+clear
 wget -O port-change "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/port/port-change.sh"
+clear
 wget -O certv2ray "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/xray/certv2ray.sh"
+clear
 wget -O menu-webmin "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/menu-webmin.sh"
+clear
 wget -O speedtest "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/ssh/speedtest_cli.py"
+clear
 wget -O about "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/about.sh"
+clear
 wget -O auto-reboot "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/auto-reboot.sh"
+clear
 wget -O restart "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/restart.sh"
+clear
 wget -O bw "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/bw.sh"
+clear
 wget -O port-ssl "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/port/port-ssl.sh"
+clear
 wget -O port-ovpn "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/port/port-ovpn.sh"
+clear
 wget -O xp "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/ssh/xp.sh"
-wget -O acs-set "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/acs-set.sh"
-wget -O sshws "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/ssh/sshws.sh"
+clear
 wget -O status "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/status.sh"
+clear
 wget -O menu-backup "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/menu-backup.sh"
+clear
 wget -O backup "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/backup/backup.sh"
+clear
 wget -O restore "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/backup/restore.sh"
+clear
 wget -O jam "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/jam.sh"
+clear
 wget -O addtrgo "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/xray/addtrgo.sh"
+clear
 wget -O trialtrojango "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/xray/trialtrojango.sh"
+clear
 wget -O deltrgo "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/xray/deltrgo.sh"
+clear
 wget -O renewtrgo "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/xray/renewtrgo.sh"
+clear
 wget -O cektrgo "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/xray/cektrgo.sh"
+clear
 wget -O cf "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/ssh/cf.sh"
+clear
 wget -O menu-bckp "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/menu-bckp.sh"
-
-chmod +x add-xray
+clear
 chmod +x menu-update
 chmod +x m-ip
 chmod +x menu
@@ -215,8 +242,6 @@ chmod +x bw
 chmod +x port-ssl
 chmod +x port-ovpn
 chmod +x xp
-chmod +x acs-set
-chmod +x sshws
 chmod +x status
 chmod +x menu-backup
 chmod +x backup
@@ -257,7 +282,7 @@ menu
 ;;
 x)
 clear
-update
+menu-update
 ;;
 y)
 clear
@@ -267,6 +292,6 @@ menu
 clear
 echo -e "\e[1;31mPlease Enter Option 1-2 or x & y Only..,Try again, Thank You..\e[0m"
 sleep 2
-menu-update
+menu
 ;;
 esac
