@@ -64,30 +64,6 @@ red "Permission Denied!"
 exit 0
 fi
 clear
-echo ""
-version=$(cat /home/ver)
-ver=$( curl sS https://raw.githubusercontent.com/Tarap-Kuhing/vn/main/versi )
-clear
-# CEK UPDATE
-Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[41;37m" && Font_color_suffix="\033[0m"
-Info1="${Green_font_prefix}($version)${Font_color_suffix}"
-Info2="${Green_font_prefix}(LATEST VERSION)${Font_color_suffix}"
-Error="Version ${Green_font_prefix}[$ver]${Font_color_suffix} available${Red_font_prefix}[Please Update]${Font_color_suffix}"
-version=$(cat /home/ver)
-new_version=$( curl sS https://raw.githubusercontent.com/Tarap-Kuhing/v/main/versi | grep $version )
-#Status Version
-if [ $version = $new_version ]; then
-sts="${Info2}"
-else
-sts="${Error}"
-fi
-clear
-echo -e "\e[1;31mUpdate Available Now..\e[m"
-echo -e ""
-sleep 1
-echo -e "\e[1;36mStart Update For New Version, Please Wait..\e[m"
-sleep 2
-clear
 echo -e "\e[0;32mGetting New Version Script..\e[0m"
 sleep 1
 clear
@@ -134,10 +110,6 @@ rm -rf m-sshovpn
 rm -rf cf
 rm -rf menu-bckp
 rm -rf add-gb
-rm -rf vmess
-rm -rf vless
-rm -rf trojan
-rm -rf shadowsocks
 
 cd /usr/bin
 wget -O menu-theme "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/menu-theme.sh"
@@ -222,14 +194,6 @@ wget -O menu-bckp "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/me
 clear
 wget -O add-gb "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/add-gb.sh"
 clear
-wget -O vmess "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/ssh/vmess"
-clear
-wget -O vless "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/ssh/vless"
-clear
-wget -O trojan "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/ssh/trojan"
-clear
-wget -O shadowsocks "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/ssh/shadowsocks"
-clear
 
 chmod +x menu-update
 chmod +x m-ip
@@ -271,10 +235,6 @@ chmod +x cektrgo
 chmod +x cf
 chmod +x menu-theme
 chmod +x add-gb
-chmod +x vmess
-chmod +x vless
-chmod +x trojan
-chmod +x shadowsocks
 
 clear
 echo -e ""
@@ -282,37 +242,7 @@ echo -e "\e[0;32mDownloaded successfully!\e[0m"
 echo ""
 ver=$( curl sS https://raw.githubusercontent.com/Tarap-Kuhing/v/main/versi )
 sleep 1
-echo -e "\e[0;32mPatching New Update, Please Wait...\e[0m"
-echo ""
-sleep 2
-echo -e "\e[0;32mPatching... OK!\e[0m"
-sleep 1
-echo ""
 echo -e "\e[0;32mSucces Update Script For New Version\e[0m"
+clear
 cd
-echo "$ver" > /home/ver
-rm -f update.sh
-clear
-echo ""
-echo -e "\033[0;34m----------------------------------------\033[0m"
-echo -e "\E[44;1;39m            SCRIPT UPDATED              \E[0m"
-echo -e "\033[0;34m----------------------------------------\033[0m"
-echo ""
-read -n 1 -s -r -p "Press any key to back on menu"
 menu
-;;
-x)
-clear
-menu-update
-;;
-y)
-clear
-menu
-;;
-*)
-clear
-echo -e "\e[1;31mPlease Enter Option 1-2 or x & y Only..,Try again, Thank You..\e[0m"
-sleep 2
-menu
-;;
-esac
