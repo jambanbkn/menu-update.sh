@@ -194,7 +194,7 @@ wget -O menu-bckp "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/me
 clear
 wget -O add-gb "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/add-gb.sh"
 clear
-wget -O gotop "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/gotop.sh"
+wget -O gotop "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/gotop.sh"
 clear
 
 chmod +x menu-update
