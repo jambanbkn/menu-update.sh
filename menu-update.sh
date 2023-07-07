@@ -110,6 +110,7 @@ rm -rf m-sshovpn
 rm -rf cf
 rm -rf menu-bckp
 rm -rf add-gb
+rm -rf copy
 
 cd /usr/bin
 wget -O menu-theme "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/menu-theme.sh"
@@ -194,6 +195,8 @@ wget -O menu-bckp "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/me
 clear
 wget -O add-gb "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/add-gb.sh"
 clear
+wget -O copy "https://raw.githubusercontent.com/Tarap-Kuhing/v/main/menu/copy.sh"
+clear
 
 chmod +x menu-update
 chmod +x m-ip
@@ -235,6 +238,7 @@ chmod +x cektrgo
 chmod +x cf
 chmod +x menu-theme
 chmod +x add-gb
+chmod +x copy
 
 clear
 echo -e ""
